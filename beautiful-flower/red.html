@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="サンプルサイトです。花をテーマにしています。">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>サンプルサイト - 花（Red）</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Noto+Sans+JP:wght@700;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body id="page-red">
+    <main>
+        <div class="colors-container">
+            <div class="colors-item">
+                <img class="colors-item-big" id="colors-item-big-image" src="images/r-1.jpg">
+                <div class="colors-item-small">
+                    <img class="colors-item-small-image" id="colors-item-small-image-1" src="images/r-1.jpg">
+                    <img class="colors-item-small-image" id="colors-item-small-image-2" src="images/r-2.jpg">
+                    <img class="colors-item-small-image" id="colors-item-small-image-3" src="images/r-3.jpg">
+                    <img class="colors-item-small-image" id="colors-item-small-image-4" src="images/r-4.jpg">
+                </div>
+            </div>
+            <div class="colors-item colors-description-container">
+                <div class="colors-item-small">
+                    <img class="colors-item-small-image" id="colors-item-small-image-5" src="images/r-5.jpg">
+                    <img class="colors-item-small-image" id="colors-item-small-image-6" src="images/r-6.jpg">
+                    <img class="colors-item-small-image" id="colors-item-small-image-7" src="images/r-7.jpg">
+                    <img class="colors-item-small-image" id="colors-item-small-image-8" src="images/r-8.jpg">
+                </div>
+                <div class="colors-item-big colors-item-big-text">
+                    <div class="colors-flower-name">
+                        <div class="colors-flower-item" id="colors-flow-name">アネモネ</div>
+                        <div class="colors-flower-item">
+                            <div class="colors-flower-item-key">学名：</div>
+                            <div class="colors-flower-item-value"> Anemone coronaria</div>
+                        </div>
+                        <div class="colors-flower-item">
+                            <div class="colors-flower-item-key">英名：</div>
+                            <div class="colors-flower-item-value">Anemone</div>
+                        </div>
+                    </div>
+                    <div class="colors-flower-description">
+                        <div class="colors-flower-item">
+                            <div class="colors-flower-item-key">科目</div>
+                            <div class="colors-flower-item-value">キンポウゲ科</div>
+                        </div>
+                        <div class="colors-flower-item">
+                            <div class="colors-flower-item-key">属名</div>
+                            <div class="colors-flower-item-value">アネモネ属</div>
+                        </div>
+                        <div class="colors-flower-item">
+                            <div class="colors-flower-item-key">原産地</div>
+                            <div class="colors-flower-item-value">地中海沿岸、ヨーロッパ南部</div>
+                        </div>
+                        <div class="colors-flower-item">
+                            <div class="colors-flower-item-key">開花時期</div>
+                            <div class="colors-flower-item-value">2～5月頃</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-title">
+            Red
+        </div>
+        <div class="footer-text">
+            赤色の花図鑑です
+        </div>
+    </footer>
+</body>
+
+<script>
+    const small_1 = document.getElementById('colors-item-small-image-1');
+    const small_2 = document.getElementById('colors-item-small-image-2');
+    const small_3 = document.getElementById('colors-item-small-image-3');
+    const small_4 = document.getElementById('colors-item-small-image-4');
+    const small_5 = document.getElementById('colors-item-small-image-5');
+    const small_6 = document.getElementById('colors-item-small-image-6');
+    const small_7 = document.getElementById('colors-item-small-image-7');
+    const small_8 = document.getElementById('colors-item-small-image-8');
+
+    const big_image = document.getElementById('colors-item-big-image');
+    [small_1, small_2, small_3, small_4, small_5, small_6, small_7, small_8].forEach(small_image => {
+        small_image.addEventListener('mouseover', () => {
+            big_image.src = small_image.src;
+            small_image.style.border = '1px solid #CCC';
+            const flow_name = document.getElementById('colors-flow-name');
+            if (small_image === small_1) {
+                flow_name.innerText = "アネモネ";
+            } else {
+                flow_name.innerText = "xxxxx";
+            }
+        });
+        small_image.addEventListener('mouseleave', () => {
+            small_image.style.border = 'none';
+        });
+    });
+</script>
+
+</html>

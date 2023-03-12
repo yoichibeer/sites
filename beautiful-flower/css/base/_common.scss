@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+body {
+    font-family: sans-serif;
+    font-size: 16px;
+    margin: 0px;
+}
+
+.top-footer-transparent {
+    background-color: rgba(255, 255, 255, 0.35);
+}
+
+
+
+/*
+ * Footer
+ */
+
+footer {
+    text-align: center;
+    color: white;
+}
+
+.footer-title {
+    font-family: 'Great Vibes', cursive;
+}
+
+
+
+.colors-flower-name {
+    margin: 1rem 0.25rem 0 2rem;
+}
+
+.colors-flower-description {
+    margin: 2rem 0.25rem 3rem 2rem;
+}
+
+.colors-flower-item {
+    display: flex;
+    flex-direction: row;
+}
+
+.colors-flower-item-key {
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.colors-flower-item-value {
+    display: inline-block;
+}
+
+.colors-flower-description .colors-flower-item-value {
+    margin: 0 0 0 1rem;
+}
+
+.enable-link {
+    position: relative;
+
+    a {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+
+        &:hover {
+            border: solid 1px #CCC;
+        }
+    }
+}

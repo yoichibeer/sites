@@ -112,22 +112,33 @@ body {
   margin: 0px;
 }
 
-.top-footer-transparent {
+.transparent {
   background-color: rgba(255, 255, 255, 0.35);
 }
 
 /*
- * Footer
+ * Header, Footer
  */
+header,
 footer {
   text-align: center;
   color: white;
 }
 
-.footer-title {
+.header-title {
   font-family: "Great Vibes", cursive;
 }
 
+.copyright {
+  padding: 0.5rem 0;
+  font-size: 0.7rem;
+  font-family: "Noto Sans JP", sans-serif;
+  text-shadow: 3px 3px 8px #353333;
+}
+
+/*
+  * Common
+  */
 .colors-flower-name {
   margin: 1rem 0.25rem 0 2rem;
 }
@@ -265,22 +276,59 @@ footer {
   display: block;
 }
 
+.pink-color {
+  color: pink;
+}
+
+.yellow-color {
+  color: yellow;
+}
+
+.red-color {
+  color: red;
+}
+
+.orange-color {
+  color: orange;
+}
+
+.white-color {
+  color: white;
+}
+
+.blue-color {
+  color: blue;
+}
+
+.purple-color {
+  color: purple;
+}
+
+.black-color {
+  color: black;
+}
+
+.black-edge {
+  -webkit-text-stroke: 1px black;
+}
+
+#page-red header,
 #page-red footer {
   background-color: #c2272d;
 }
 
-#page-red .footer-title {
+#page-red .header-title {
   font-size: 8rem;
   padding: 40px 0px 0px 0px;
 }
 
-#page-red .footer-text {
+#page-red .header-text {
   font-size: 1em;
   padding: 0px 0px 30px 0px;
 }
 
 @media only screen and (max-width: 767px) {
-  #page-red .footer-title {
+  #page-red .header-title {
     font-size: 3rem;
     padding: 20px 0px 0px 0px;
   }
@@ -339,19 +387,20 @@ footer {
 }
 
 /*
- * Footer
+ * Header, Footer
  */
+#page-top header,
 #page-top footer {
-  background-image: url("../images/footer_top.jpg");
+  background-image: url("../images/top_header.jpg");
 }
 
-#page-top .footer-title {
+#page-top .header-title {
   font-size: 6rem;
   padding: 40px 0px 0px 0px;
   text-shadow: 5px 5px 8px #353333;
 }
 
-#page-top .footer-text {
+#page-top .header-text {
   font-size: 1rem;
   padding: 0px 0px 30px 0px;
   text-shadow: 2px 2px 3px #353333;
@@ -368,44 +417,9 @@ footer {
   .top-item-right .top-item-image {
     order: 2;
   }
-  #page-top .footer-title {
+  #page-top .header-title {
     font-size: 3rem;
     padding: 20px 0px 0px 0px;
     text-shadow: 3px 3px 5px #353333;
   }
-}
-.pink-color {
-  color: pink;
-}
-
-.yellow-color {
-  color: yellow;
-}
-
-.red-color {
-  color: red;
-}
-
-.orange-color {
-  color: orange;
-}
-
-.white-color {
-  color: white;
-}
-
-.blue-color {
-  color: blue;
-}
-
-.purple-color {
-  color: purple;
-}
-
-.black-color {
-  color: black;
-}
-
-.black-edge {
-  -webkit-text-stroke: 1px black;
 }/*# sourceMappingURL=style.css.map */

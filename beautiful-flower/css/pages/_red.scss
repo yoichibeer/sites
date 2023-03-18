@@ -1,21 +1,22 @@
 @charset "UTF-8";
 
+#page-red header,
 #page-red footer {
     background-color: #c2272d;
 }
 
-#page-red .footer-title {
+#page-red .header-title {
     font-size: 8rem;
     padding: 40px 0px 0px 0px;
 }
 
-#page-red .footer-text {
+#page-red .header-text {
     font-size: 1em;
     padding: 0px 0px 30px 0px;
 }
 
 @media only screen and (max-width: 767px) {
-    #page-red .footer-title {
+    #page-red .header-title {
         font-size: 3rem;
         padding: 20px 0px 0px 0px;
     }

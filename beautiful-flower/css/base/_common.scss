@@ -6,26 +6,37 @@ body {
     margin: 0px;
 }
 
-.top-footer-transparent {
+.transparent {
     background-color: rgba(255, 255, 255, 0.35);
 }
 
 
 
 /*
- * Footer
+ * Header, Footer
  */
 
+header,
 footer {
     text-align: center;
     color: white;
 }
 
-.footer-title {
+.header-title {
     font-family: 'Great Vibes', cursive;
 }
 
+.copyright {
+    padding: 0.5rem 0;
+    font-size: 0.7rem;
+    font-family: 'Noto Sans JP', sans-serif;
+    text-shadow: 3px 3px 8px #353333;
+}
 
+
+/*
+  * Common
+  */
 
 .colors-flower-name {
     margin: 1rem 0.25rem 0 2rem;

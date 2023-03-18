@@ -56,24 +56,27 @@
 
 
 /*
- * Footer
+ * Header, Footer
  */
 
+#page-top header,
 #page-top footer {
-    background-image: url("../images/footer_top.jpg");
+    background-image: url("../images/top_header.jpg");
 }
 
-#page-top .footer-title {
+#page-top .header-title {
     font-size: 6rem;
     padding: 40px 0px 0px 0px;
     text-shadow: 5px 5px 8px #353333;
 }
 
-#page-top .footer-text {
+#page-top .header-text {
     font-size: 1rem;
     padding: 0px 0px 30px 0px;
     text-shadow: 2px 2px 3px #353333;
 }
+
+
 
 @media only screen and (max-width: 767px) {
     .top-item {
@@ -89,7 +92,7 @@
         order: 2;
     }
 
-    #page-top .footer-title {
+    #page-top .header-title {
         font-size: 3rem;
         padding: 20px 0px 0px 0px;
         text-shadow: 3px 3px 5px #353333;
